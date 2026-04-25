@@ -102,6 +102,19 @@ To override the message for a specific page, add `data-wa-msg` to body:
 
 **Phone number**: `+963 966 654 441` (configured as `963966654441` in `main.js`).
 
+## Analytics
+
+Google Analytics (GA4, ID `G-YFTLY878H5`) is loaded on every page via `assets/main.js`. The script:
+
+- Loads asynchronously (no impact on page rendering)
+- Respects browser **Do-Not-Track** signal (skips entirely if set)
+- Tracks page views automatically + custom events for conversions:
+  - `whatsapp_click` — every click on the floating WhatsApp button
+  - `email_click` — every `mailto:` link click
+  - `phone_click` — every `tel:` link click
+
+Events include `page` (which page) and `lang` (which language) parameters so you can segment in GA dashboards. To change the GA ID, edit `GA_ID` once in `assets/main.js`.
+
 ## SEO features
 
 - ✅ Unique `<title>` and `<meta description>` per page (action-oriented, keyword-rich, &lt;160 chars)

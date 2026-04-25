@@ -2,6 +2,24 @@
 (function(){
   'use strict';
 
+  // ===== Google Analytics (gtag) =====
+  // Loaded on every page. Respects Do-Not-Track.
+  (function loadAnalytics(){
+    var GA_ID = 'G-YFTLY878H5';
+    var dnt = navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.msDoNotTrack === '1';
+    if(dnt) return;
+
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+  })();
+
   // ===== Layout: unified header & footer =====
   var html = document.documentElement;
   var body = document.body;
@@ -194,6 +212,21 @@
   renderHeader();
   renderFooter();
   renderWhatsApp();
+
+  // ===== Conversion tracking (GA events for high-value actions) =====
+  document.addEventListener('click', function(e){
+    if(typeof window.gtag !== 'function') return;
+    var a = e.target.closest && e.target.closest('a[href]');
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    if(href.indexOf('wa.me/') !== -1 || a.classList.contains('wa-btn')){
+      window.gtag('event', 'whatsapp_click', {page: pageKey || 'home', lang: isAr ? 'ar' : 'en'});
+    } else if(href.indexOf('mailto:') === 0){
+      window.gtag('event', 'email_click', {page: pageKey || 'home'});
+    } else if(href.indexOf('tel:') === 0){
+      window.gtag('event', 'phone_click', {page: pageKey || 'home'});
+    }
+  });
 
   // Highlight current product/service in footer (subpage)
   if(pageKey){
