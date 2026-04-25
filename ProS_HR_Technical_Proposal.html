@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simple HR — نظام إدارة الموارد البشرية | Pro S;</title>
+<meta name="description" content="Simple HR من Pro S; — نظام شامل لإدارة الموارد البشرية: بيانات الموظفين، الحضور والانصراف عبر البصمة، الإجازات، الساعات الإضافية، والرواتب.">
+<meta name="keywords" content="نظام موارد بشرية, Simple HR, HR System, البصمة, الحضور والانصراف, إدارة الإجازات, الرواتب, Pro S">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0d9373">
+<link rel="canonical" href="https://kusaisssd.github.io/ProS-website/ProS_HR_Technical_Proposal.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pro S;">
+<meta property="og:locale" content="ar_SY">
+<meta property="og:title" content="Simple HR System — Pro S;">
+<meta property="og:description" content="نظام شامل لإدارة الموارد البشرية مع تكامل مع أجهزة البصمة وحساب آلي للساعات.">
+<meta property="og:url" content="https://kusaisssd.github.io/ProS-website/ProS_HR_Technical_Proposal.html">
+<meta property="og:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Simple HR System — Pro S;">
+<meta name="twitter:description" content="نظام موارد بشرية متكامل مع البصمة وحساب آلي للساعات والرواتب.">
+<meta name="twitter:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Simple HR System",
+      "description": "Complete HR management system: employee records, fingerprint-device attendance, leave management, overtime, payroll, and performance evaluation.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "publisher": {"@type":"Organization","name":"Pro S;","url":"https://kusaisssd.github.io/ProS-website/"},
+      "offers": {"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"USD"}},
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://kusaisssd.github.io/ProS-website/"},
+        {"@type":"ListItem","position":2,"name":"المنتجات","item":"https://kusaisssd.github.io/ProS-website/#products"},
+        {"@type":"ListItem","position":3,"name":"Simple HR","item":"https://kusaisssd.github.io/ProS-website/ProS_HR_Technical_Proposal.html"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+/* ===== HR Proposal — page-specific styles ===== */
+body{line-height:1.8}
+section{padding:80px 0}
+.st{font-size:clamp(1.6rem,3vw,2.2rem)}
+.sd{font-size:.95rem;max-width:600px;margin-bottom:36px}
+
+.geo-bg .gs:nth-child(1){width:350px;height:350px;background:var(--geo-1);top:8%;right:-5%;animation-duration:25s}
+.geo-bg .gs:nth-child(2){width:250px;height:250px;border:1.5px solid var(--geo-s);top:30%;left:5%;animation-delay:-6s;animation-duration:22s}
+.geo-bg .gs:nth-child(3){width:200px;height:200px;background:var(--geo-1);bottom:15%;right:10%;animation-delay:-12s;animation-duration:28s}
+
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.feat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 20px;transition:all .3s;box-shadow:var(--s1)}
+.feat:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.feat h4{font-size:.9rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.feat p{font-size:.82rem;color:var(--tx2);line-height:1.55}
+
+.mod-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 32px;margin-bottom:24px;box-shadow:var(--s1);transition:all .3s}
+.mod-card:hover{box-shadow:var(--s3);border-color:var(--ac-m)}
+.mod-header{display:flex;align-items:center;gap:14px;margin-bottom:18px;cursor:pointer}
+.mod-ico{width:48px;height:48px;border-radius:12px;background:var(--ac-l);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.mod-header h3{font-size:1.1rem;font-weight:800}
+.mod-header p{font-size:.82rem;color:var(--txm);margin-top:2px}
+.mod-toggle{margin-right:auto;margin-left:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .3s;cursor:pointer;flex-shrink:0;color:var(--txm)}
+.mod-toggle.open{transform:rotate(180deg);color:var(--ac);border-color:var(--ac)}
+.mod-body{display:none;padding-top:18px;border-top:1px solid var(--border)}
+.mod-body.open{display:block}
+.mod-sub{margin-bottom:16px}
+.mod-sub h4{font-size:.88rem;font-weight:700;color:var(--ac);margin-bottom:8px}
+.mod-sub ul{list-style:none}
+.mod-sub li{font-size:.82rem;color:var(--tx2);padding:3px 0 3px 18px;position:relative;line-height:1.5}
+.mod-sub li::before{content:'✓';position:absolute;right:0;color:var(--ac);font-weight:700;font-size:.76rem}
+.opt-note{font-size:.85rem;color:var(--tx2);padding:12px 16px;background:var(--ac-l);border-radius:10px;border-right:3px solid var(--ac);margin-bottom:16px}
+
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.why{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;text-align:center;transition:all .3s;box-shadow:var(--s1)}
+.why:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.why-ico{font-size:1.6rem;margin-bottom:8px}
+.why h4{font-size:.85rem;font-weight:700;margin-bottom:4px}
+.why p{font-size:.76rem;color:var(--txm);line-height:1.5}
+
+.contact-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;text-align:center;box-shadow:var(--s1)}
+.contact-box h3{font-family:var(--fd);font-size:1.4rem;font-weight:800;margin-bottom:6px}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.contact-item{padding:16px;background:var(--ac-l);border-radius:12px;font-size:.83rem;color:var(--tx2)}
+.contact-item strong{display:block;color:var(--tx);margin-bottom:4px}
+.contact-item a{color:var(--ac);text-decoration:none}
+
+@media(max-width:1024px){.why-grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.mod-card{padding:24px 20px}}
+</style>
+</head>
+<body data-layout="sub" data-page="hr">
+<div class="geo-bg"><div class="gs"></div><div class="gs"></div><div class="gs"></div></div>
+<div class="dot-grid"></div>
+
+<nav id="nav" aria-label="Main navigation"></nav>
+
+<main id="main">
+<section class="p-hero">
+  <div class="ctn">
+    <div class="p-hero-badge">👥 Enterprise System — Pro S;</div>
+    <h1>نظام إدارة <em>الموارد البشرية</em></h1>
+    <p class="p-hero-sub">نظام متكامل وبسيط يوفر جميع الأدوات اللازمة لإدارة بيانات الموظفين، متابعة الحضور والانصراف، وإدارة الإجازات بشكل آلي ومتكامل مع أجهزة البصمة</p>
+    <div class="p-hero-tags"><span class="p-hero-tag">ASP.NET Core</span><span class="p-hero-tag">EF Core</span><span class="p-hero-tag">REST API</span><span class="p-hero-tag">RTL Support</span></div>
+    <div class="hero-btns">
+      <a href="index.html#contact" class="bp">اطلب عرض سعر ←</a>
+      <a href="#modules" class="bsb">استعرض الوحدات</a>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">نظرة عامة</span>
+    <h2 class="st"><em>مزايا</em> النظام</h2>
+    <div class="feat-grid">
+      <div class="feat rv"><h4>⚡ سهولة الاستخدام</h4><p>واجهة بسيطة ومباشرة لا تتطلب تدريب مكثف</p></div>
+      <div class="feat rv d1"><h4>🔄 التكامل الكامل</h4><p>ربط مباشر مع أجهزة البصمة وحساب آلي للساعات</p></div>
+      <div class="feat rv d2"><h4>📱 الوصول من أي مكان</h4><p>نظام ويب يعمل على جميع الأجهزة والمتصفحات</p></div>
+      <div class="feat rv d3"><h4>🌍 دعم كامل للعربية</h4><p>واجهة احترافية بالكامل باللغة العربية</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section id="modules">
+  <div class="ctn">
+    <span class="sl">وحدات النظام</span>
+    <h2 class="st">الوحدات <em>الأساسية</em></h2>
+    <p class="sd">استعرض كل وحدة من وحدات النظام ومميزاتها التفصيلية</p>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">🏢</div><div><h3>إدارة بيانات الشركة والفروع</h3><p>الهيكل التنظيمي والأقسام والفروع</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="mod-sub"><h4>معلومات الشركة الأساسية</h4><ul><li>الاسم التجاري والاسم القانوني</li><li>العنوان الرئيسي ومعلومات الاتصال</li><li>السجل التجاري والبطاقة الضريبية</li><li>الشعار والمستندات الرسمية</li></ul></div>
+        <div class="mod-sub"><h4>إدارة الفروع</h4><ul><li>إضافة وتعديل معلومات الفروع</li><li>تحديد موقع كل فرع جغرافياً</li><li>ربط الموظفين بالفروع</li><li>تقارير منفصلة لكل فرع</li></ul></div>
+        <div class="mod-sub"><h4>إدارة الأقسام</h4><ul><li>إنشاء الأقسام والإدارات</li><li>تحديد المسؤولين عن كل قسم</li><li>الهيكل التنظيمي للشركة</li></ul></div>
+      </div>
+    </div>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">👥</div><div><h3>ذاتية الموظفين</h3><p>البيانات الشخصية والوظيفية والمستندات</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="mod-sub"><h4>البيانات الشخصية</h4><ul><li>المعلومات الأساسية (الاسم، العنوان، تاريخ الميلاد)</li><li>معلومات الاتصال (الهاتف، البريد الإلكتروني)</li><li>الحالة الاجتماعية والمعالون</li><li>صورة الموظف والمستندات الشخصية</li></ul></div>
+        <div class="mod-sub"><h4>البيانات الوظيفية</h4><ul><li>الرقم الوظيفي والمسمى الوظيفي</li><li>القسم والفرع التابع له</li><li>تاريخ التعيين وتاريخ المباشرة</li><li>نوع العقد (دوام كامل، جزئي، مؤقت)</li><li>الراتب الأساسي والبدلات</li></ul></div>
+        <div class="mod-sub"><h4>المؤهلات والخبرات</h4><ul><li>المؤهلات الدراسية</li><li>الشهادات والدورات التدريبية</li><li>الخبرات السابقة</li></ul></div>
+        <div class="mod-sub"><h4>المستندات</h4><ul><li>رفع وإدارة المستندات (CV، الهوية، الشهادات)</li><li>تتبع تواريخ انتهاء المستندات</li><li>إشعارات تلقائية عند قرب انتهاء الصلاحية</li></ul></div>
+      </div>
+    </div>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">🔐</div><div><h3>الربط مع جهاز البصمة</h3><p>التكامل مع أجهزة البصمة وسجل الحضور</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="mod-sub"><h4>التكامل مع أجهزة البصمة</h4><ul><li>دعم أجهزة البصمة الشائعة (ZKTeco, eSSL, Anviz)</li><li>سحب البيانات تلقائياً من الأجهزة</li><li>تسجيل بصمات الموظفين الجدد</li><li>دعم عدة أجهزة للفروع المختلفة</li></ul></div>
+        <div class="mod-sub"><h4>سجل الحضور والانصراف</h4><ul><li>عرض سجل البصمات اليومي</li><li>تحديد أول دخول وآخر خروج</li><li>معالجة حالات نسيان البصمة</li><li>إضافة بصمات يدوية عند الحاجة</li></ul></div>
+        <div class="mod-sub"><h4>التقارير والإشعارات</h4><ul><li>تقارير الحضور والغياب الشهرية</li><li>إشعارات فورية للتأخير</li><li>تنبيهات الانصراف المبكر</li></ul></div>
+      </div>
+    </div>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">🏖️</div><div><h3>إدارة الإجازات والعطل الرسمية</h3><p>أنواع الإجازات وطلباتها والعطل الرسمية</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="mod-sub"><h4>أنواع الإجازات</h4><ul><li>الإجازة السنوية</li><li>الإجازات المرضية</li><li>إجازات الطوارئ</li><li>الإجازات غير مدفوعة الأجر</li><li>إجازات مخصصة (أمومة، حج، دراسية)</li></ul></div>
+        <div class="mod-sub"><h4>طلبات الإجازات</h4><ul><li>تقديم طلبات الإجازة إلكترونياً</li><li>سير عمل الموافقات (المدير المباشر، الموارد البشرية)</li><li>حساب الرصيد المتبقي تلقائياً</li><li>إشعارات للموظف والمدير</li></ul></div>
+        <div class="mod-sub"><h4>العطل الرسمية</h4><ul><li>تحديد العطل الرسمية السنوية والأعياد</li><li>استثناء العطل من حساب الحضور</li><li>تقويم سنوي للعطل</li></ul></div>
+        <div class="mod-sub"><h4>التقارير</h4><ul><li>تقرير رصيد الإجازات لكل موظف</li><li>الإجازات المستهلكة والمتبقية</li><li>إحصائيات الإجازات حسب القسم</li></ul></div>
+      </div>
+    </div>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">⏱️</div><div><h3>حساب الساعات والأوقات الإضافية</h3><p>الدوام والساعات الإضافية والتأخير</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="mod-sub"><h4>أوقات العمل الرسمية</h4><ul><li>تحديد أوقات الدوام لكل قسم/موظف</li><li>دعم الورديات المتعددة</li><li>أوقات مرنة للأقسام المختلفة</li><li>فترة سماح للدخول والخروج</li></ul></div>
+        <div class="mod-sub"><h4>الحساب الآلي للساعات</h4><ul><li>حساب ساعات العمل الفعلية يومياً</li><li>خصم فترات الغياب والتأخير</li><li>حساب ساعات العمل الشهرية</li><li>مقارنة الساعات الفعلية بالمطلوبة</li></ul></div>
+        <div class="mod-sub"><h4>الساعات الإضافية (Overtime)</h4><ul><li>حساب الساعات الإضافية تلقائياً</li><li>تحديد نسب مضاعفات الساعات الإضافية</li><li>ساعات إضافية في أيام العطل (نسبة مضاعفة)</li><li>طلبات الموافقة على الساعات الإضافية</li><li>تقارير الساعات الإضافية الشهرية</li></ul></div>
+        <div class="mod-sub"><h4>التأخير والانصراف المبكر</h4><ul><li>حساب دقائق التأخير</li><li>تحويل التأخير إلى خصومات</li><li>الانصراف المبكر وتأثيره</li><li>سياسات مرنة للخصومات</li></ul></div>
+        <div class="mod-sub"><h4>التقارير التفصيلية</h4><ul><li>تقرير الحضور الشهري لكل موظف</li><li>ملخص الساعات (عادية، إضافية، غياب)</li><li>تقارير المقارنة بين الموظفين</li><li>تصدير التقارير (Excel, PDF)</li></ul></div>
+      </div>
+    </div>
+
+    <div class="mod-card rv">
+      <div class="mod-header" onclick="toggleMod(this)"><div class="mod-ico">➕</div><div><h3>الميزات الاختيارية</h3><p>وحدات إضافية يمكن تفعيلها حسب الحاجة</p></div><div class="mod-toggle">▼</div></div>
+      <div class="mod-body">
+        <div class="opt-note"><strong>ملاحظة:</strong> هذه الميزات اختيارية ويمكن إضافتها حسب احتياجات الشركة</div>
+        <div class="mod-sub"><h4>واجهة الموظف الذاتية (Self-Service)</h4><ul><li>تسجيل دخول آمن لكل موظف</li><li>الاطلاع على البيانات الشخصية والوظيفية</li><li>عرض سجل الحضور والانصراف</li><li>مراجعة تفاصيل الدوام والساعات</li><li>تقديم طلبات الإجازة إلكترونياً</li><li>متابعة حالة طلبات الإجازة</li><li>عرض رصيد الإجازات المتبقي</li><li>تحميل المستندات الشخصية</li><li>استعراض كشوف الرواتب</li></ul></div>
+        <div class="mod-sub"><h4>نظام الرواتب</h4><ul><li>حساب الراتب الشهري بناءً على الحضور</li><li>إضافة البدلات والحوافز</li><li>خصم الغياب والتأخير تلقائياً</li><li>إضافة قيمة الساعات الإضافية</li><li>كشوف الرواتب الشهرية</li><li>تقارير الرواتب والاستحقاقات</li></ul></div>
+        <div class="mod-sub"><h4>نظام الإشعارات والتنبيهات</h4><ul><li>إشعارات البريد الإلكتروني</li><li>تنبيهات داخل النظام</li><li>إشعارات التأخير والغياب</li><li>تنبيهات انتهاء صلاحية المستندات</li><li>إشعارات طلبات الإجازة</li></ul></div>
+        <div class="mod-sub"><h4>تقييم الأداء</h4><ul><li>إنشاء نماذج تقييم مخصصة</li><li>تقييمات دورية للموظفين</li><li>معايير أداء قابلة للتخصيص</li><li>تقارير الأداء الفردية والجماعية</li><li>متابعة تطور الأداء عبر الزمن</li></ul></div>
+        <div class="mod-sub"><h4>إدارة التدريب والتطوير</h4><ul><li>تسجيل الدورات التدريبية</li><li>تتبع شهادات وتراخيص الموظفين</li><li>تخطيط احتياجات التدريب</li><li>تقييم فعالية البرامج التدريبية</li></ul></div>
+        <div class="mod-sub"><h4>تقارير متقدمة ولوحات معلومات</h4><ul><li>لوحة معلومات تنفيذية شاملة</li><li>تقارير تحليلية مخصصة</li><li>مؤشرات الأداء الرئيسية (KPIs)</li><li>رسوم بيانية وإحصائيات تفاعلية</li><li>تصدير التقارير بصيغ متعددة</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">لماذا نظامنا</span>
+    <h2 class="st">لماذا تختار <em>Simple HR</em>؟</h2>
+    <div class="why-grid">
+      <div class="why rv"><div class="why-ico">✅</div><h4>البساطة والوضوح</h4><p>واجهة سهلة الاستخدام لا تحتاج خبرة تقنية عالية</p></div>
+      <div class="why rv d1"><div class="why-ico">⚡</div><h4>توفير الوقت</h4><p>أتمتة كاملة للعمليات اليومية وتقليل الأعمال الورقية</p></div>
+      <div class="why rv d2"><div class="why-ico">🎯</div><h4>دقة البيانات</h4><p>حسابات دقيقة للحضور والساعات والإجازات</p></div>
+      <div class="why rv d3"><div class="why-ico">🔒</div><h4>الأمان والخصوصية</h4><p>حماية شاملة لبيانات الموظفين مع صلاحيات محكمة</p></div>
+      <div class="why rv"><div class="why-ico">📱</div><h4>المرونة في العمل</h4><p>إمكانية الوصول من أي جهاز وفي أي وقت</p></div>
+      <div class="why rv d1"><div class="why-ico">🌍</div><h4>محلي ومتوافق</h4><p>مصمم للسوق السوري مع مراعاة القوانين المحلية</p></div>
+      <div class="why rv d2"><div class="why-ico">📊</div><h4>تقارير ذكية</h4><p>تقارير تحليلية تساعد في اتخاذ قرارات إدارية أفضل</p></div>
+      <div class="why rv d3"><div class="why-ico">💡</div><h4>قابل للتطوير</h4><p>نظام مرن يمكن توسيعه وإضافة ميزات جديدة</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn">
+    <div class="contact-box">
+      <h3>للاستفسار والتواصل</h3>
+      <p style="font-size:1rem;color:var(--tx2);margin-bottom:6px">Pro S; — As Smart As Simple</p>
+      <div class="contact-grid">
+        <div class="contact-item"><strong>📧 البريد الإلكتروني</strong><a href="mailto:info@pro-sss.com">info@pro-sss.com</a><br><a href="mailto:kosayalassaf@gmail.com">kosayalassaf@gmail.com</a></div>
+        <div class="contact-item"><strong>📱 الهاتف</strong><a href="tel:+963966654441">+963-966654441</a></div>
+        <div class="contact-item"><strong>🌐 الموقع</strong><a href="index.html">الرئيسية</a></div>
+        <div class="contact-item"><strong>📍 العنوان</strong>دمشق، سوريا</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="ft" aria-label="Site footer"></footer>
+
+<script src="assets/main.js" defer></script>
+<script>
+function toggleMod(header){var body=header.nextElementSibling;var toggle=header.querySelector('.mod-toggle');body.classList.toggle('open');toggle.classList.toggle('open')}
+</script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Camera Planner — مخطط أنظمة المراقبة الاحترافي | Pro S;</title>
+<meta name="description" content="Camera Planner من Pro S; — أداة هندسية لتصميم مخططات الكاميرات، حساب التغطية وأطوال الكابلات، وإعداد عروض احترافية لشركات الأمان والمراقبة.">
+<meta name="keywords" content="مخطط كاميرات, Camera Planner, تخطيط أنظمة مراقبة, CCTV, تغطية الكاميرات, حساب الكابلات, Pro S">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0d9373">
+<link rel="canonical" href="https://kusaisssd.github.io/ProS-website/camera-planner.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pro S;">
+<meta property="og:locale" content="ar_SY">
+<meta property="og:title" content="Camera Planner — مخطط أنظمة المراقبة | Pro S;">
+<meta property="og:description" content="أداة هندسية لتصميم مخططات الكاميرات وحساب التغطية وأطوال الكابلات.">
+<meta property="og:url" content="https://kusaisssd.github.io/ProS-website/camera-planner.html">
+<meta property="og:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Camera Planner — Pro S;">
+<meta name="twitter:description" content="أداة هندسية لتخطيط أنظمة المراقبة بدقة.">
+<meta name="twitter:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Camera Planner",
+      "description": "Engineering platform for designing surveillance camera plans — coverage simulation, cable distance calculation, and project documentation.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web Browser",
+      "url": "https://camera-planner-2fc4gindt-kosay-alassafs-projects.vercel.app/",
+      "publisher": {"@type":"Organization","name":"Pro S;","url":"https://kusaisssd.github.io/ProS-website/"},
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://kusaisssd.github.io/ProS-website/"},
+        {"@type":"ListItem","position":2,"name":"المنتجات","item":"https://kusaisssd.github.io/ProS-website/#products"},
+        {"@type":"ListItem","position":3,"name":"Camera Planner","item":"https://kusaisssd.github.io/ProS-website/camera-planner.html"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+/* ===== camera-planner — page-specific styles ===== */
+body{line-height:1.8}
+section{padding:80px 0}
+.st{font-size:clamp(1.6rem,3vw,2.2rem)}
+.sd{font-size:.95rem;max-width:600px;margin-bottom:36px}
+
+.geo-bg .gs:nth-child(1){width:350px;height:350px;background:var(--geo-1);top:8%;right:-5%;animation-duration:25s}
+.geo-bg .gs:nth-child(2){width:250px;height:250px;border:1.5px solid var(--geo-s);top:30%;left:5%;animation-delay:-6s;animation-duration:22s}
+.geo-bg .gs:nth-child(3){width:200px;height:200px;background:var(--geo-1);bottom:15%;right:10%;animation-delay:-12s;animation-duration:28s}
+
+.g8{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.g9{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;transition:all .3s;box-shadow:var(--s1)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.card-ico{font-size:1.6rem;margin-bottom:8px}
+.card h4{font-size:.9rem;font-weight:700;margin-bottom:4px}
+.card p{font-size:.82rem;color:var(--tx2);line-height:1.55}
+.card-lg{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px 24px;transition:all .3s;box-shadow:var(--s1)}
+.card-lg:hover{box-shadow:var(--s3);border-color:var(--ac-m)}
+.card-lg .ico{font-size:2rem;margin-bottom:10px}
+.card-lg h4{font-size:1rem;font-weight:700;margin-bottom:6px}
+.card-lg>p{font-size:.88rem;color:var(--tx2);line-height:1.6;margin-bottom:12px}
+.card-lg ul{list-style:none}
+.card-lg li{font-size:.82rem;color:var(--tx2);padding:3px 0 3px 18px;position:relative;line-height:1.5}
+.card-lg li::before{content:'✓';position:absolute;right:0;color:var(--ac);font-weight:700;font-size:.76rem}
+
+.step{display:flex;gap:20px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px;margin-bottom:16px;transition:all .3s;box-shadow:var(--s1)}
+.step:hover{box-shadow:var(--s3);border-color:var(--ac-m)}
+.step-num{width:48px;height:48px;min-width:48px;border-radius:50%;background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;font-family:var(--fd)}
+.step h4{font-size:.95rem;font-weight:700;margin-bottom:4px}
+.step>div p{font-size:.84rem;color:var(--tx2);line-height:1.6;margin-bottom:8px}
+.step-tips{background:var(--ac-l);border:1px solid var(--ac-m);border-radius:10px;padding:12px 14px;font-size:.8rem}
+.step-tips strong{color:var(--ac);display:block;margin-bottom:4px}
+.step-tips span{display:block;color:var(--tx2);line-height:1.5;padding:1px 0 1px 14px;position:relative}
+.step-tips span::before{content:'•';position:absolute;right:0;color:var(--ac)}
+
+.tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tips-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px 24px;box-shadow:var(--s1)}
+.tips-card h3{font-size:1.05rem;font-weight:700;margin-bottom:14px}
+.tips-card li{list-style:none;font-size:.88rem;color:var(--tx2);padding:4px 0 4px 20px;position:relative;line-height:1.6}
+.tips-card.good li::before{content:'✓';position:absolute;right:0;color:var(--ac);font-weight:700}
+.tips-card.bad li::before{content:'✗';position:absolute;right:0;color:#c44;font-weight:700}
+
+.tech-g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tech{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 16px;transition:all .2s;box-shadow:var(--s1)}
+.tech:hover{border-color:var(--ac);transform:translateY(-2px)}
+.tech h4{font-size:.88rem;font-weight:700;margin-bottom:3px}
+.tech p{font-size:.76rem;color:var(--txm);line-height:1.4}
+
+@media(max-width:1024px){.g8,.tech-g{grid-template-columns:1fr 1fr}.g9{grid-template-columns:1fr 1fr}.tips-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.g8,.g9,.tech-g{grid-template-columns:1fr}.step{flex-direction:column}}
+</style>
+</head>
+<body data-layout="sub" data-page="camera">
+<div class="geo-bg"><div class="gs"></div><div class="gs"></div><div class="gs"></div></div>
+<div class="dot-grid"></div>
+
+<nav id="nav" aria-label="Main navigation"></nav>
+
+<main id="main">
+<section class="p-hero">
+  <div class="ctn">
+    <div class="p-hero-badge">📹 Engineering Platform — Pro S;</div>
+    <h1><em>Camera Planner</em></h1>
+    <p class="p-hero-sub">أداة متكاملة وقوية تمكن شركات الأمان والمراقبة من تصميم مخططات ديناميكية احترافية، إدارة الكابلات، تتبع الأجهزة، وعرض تغطية الكاميرات للعملاء قبل التركيب</p>
+    <div class="p-hero-tags"><span class="p-hero-tag">React</span><span class="p-hero-tag">Canvas API</span><span class="p-hero-tag">Context API</span><span class="p-hero-tag">Engineering</span><span class="p-hero-tag">CCTV</span></div>
+    <div class="hero-btns">
+      <a href="https://camera-planner-2fc4gindt-kosay-alassafs-projects.vercel.app/" target="_blank" rel="noopener" class="bp">ابدأ التخطيط الآن ←</a>
+      <a href="index.html#contact" class="bsb">تواصل معنا</a>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">الفوائد الرئيسية</span>
+    <h2 class="st">لماذا <em>Camera Planner</em>؟</h2>
+    <div class="g8">
+      <div class="card rv"><div class="card-ico">🎯</div><h4>تصور واقعي للتغطية</h4><p>شاهد بالضبط أين ستغطي كل كاميرا قبل التركيب مع عرض مرئي للزوايا</p></div>
+      <div class="card rv d1"><div class="card-ico">💰</div><h4>توفير التكاليف</h4><p>تجنب الأخطاء المكلفة والحاجة لإعادة التركيب من خلال التخطيط المسبق</p></div>
+      <div class="card rv d2"><div class="card-ico">⏱️</div><h4>توفير الوقت</h4><p>خطط بسهولة وسرعة بدلاً من الرسومات اليدوية مع أدوات ذكية</p></div>
+      <div class="card rv d3"><div class="card-ico">📊</div><h4>عروض احترافية</h4><p>قدم عروض موثوقة وعالية الجودة لعملائك مع معلومات شاملة</p></div>
+      <div class="card rv"><div class="card-ico">✅</div><h4>دقة عالية</h4><p>حسابات دقيقة لزوايا الرؤية والتغطية وأطوال الكابلات</p></div>
+      <div class="card rv d1"><div class="card-ico">🤝</div><h4>رضا العملاء</h4><p>زيادة الثقة من خلال التخطيط الشفاف والتوثيق الكامل</p></div>
+      <div class="card rv d2"><div class="card-ico">🔌</div><h4>إدارة الكابلات</h4><p>حساب أطوال الكابلات المطلوبة وتخطيط المسارات بدقة</p></div>
+      <div class="card rv d3"><div class="card-ico">📱</div><h4>سهولة الاستخدام</h4><p>واجهة بديهية وسلسة مع تعليمات واضحة في كل خطوة</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn">
+    <span class="sl">المميزات التقنية</span>
+    <h2 class="st">المميزات <em>التقنية الشاملة</em></h2>
+    <div class="g9">
+      <div class="card-lg rv"><div class="ico">📐</div><h4>رفع وتحميل المخططات</h4><p>ارفع صور المخططات المعمارية بجميع الأنواع وابدأ العمل فوراً</p><ul><li>دعم صيغ متعددة (JPG, PNG)</li><li>معاينة فورية</li><li>إمكانية تبديل المخططات</li></ul></div>
+      <div class="card-lg rv d1"><div class="ico">📏</div><h4>إعداد المقياس الذكي</h4><p>حدد المقياس بخطوتين بسيطتين مع واجهة تعليمية شاملة</p><ul><li>إدخال اسم المشروع</li><li>تحديد المسافة المعروفة</li><li>أمثلة عملية للمسافات الشائعة</li></ul></div>
+      <div class="card-lg rv d2"><div class="ico">📷</div><h4>إضافة وإدارة الكاميرات</h4><p>ضع الكاميرات على المخطط مع تحكم كامل بالمواصفات</p><ul><li>اختيار فتحة العدسة (f/1.4 - f/8)</li><li>ضبط زاوية الرؤية (30° - 180°)</li><li>تحديد عمق التغطية</li><li>كاميرات 360 درجة</li><li>السحب والإفلات للتحريك</li><li>التدوير باستخدام نقطة التحكم</li></ul></div>
+      <div class="card-lg rv"><div class="ico">🖥️</div><h4>إضافة الأجهزة</h4><p>أضف أجهزة DVR/NVR وأجهزة الشبكة الأخرى</p><ul><li>DVR/NVR مع عدد القنوات</li><li>Switch وRouter</li><li>PoE Switch</li><li>تتبع القنوات المستخدمة</li></ul></div>
+      <div class="card-lg rv d1"><div class="ico">🔌</div><h4>نظام الكابلات المتقدم</h4><p>ارسم وخطط مسارات الكابلات بثلاثة أنواع مختلفة</p><ul><li>كابل كاميرا (من كاميرا إلى DVR)</li><li>كابل أجهزة (بين الأجهزة)</li><li>كابل حر (مسار مخصص)</li><li>نقاط انعطاف (Ctrl+Click)</li><li>حساب الطول التلقائي</li><li>اختيار القناة للكاميرات</li></ul></div>
+      <div class="card-lg rv d2"><div class="ico">⚙️</div><h4>لوحة تحكم الكاميرا</h4><p>تحكم كامل بإعدادات كل كاميرا</p><ul><li>توصيف سريع للموقع</li><li>عنوان IP أو Serial</li><li>اسم المستخدم وكلمة المرور</li><li>معلومات تفصيلية لكل كاميرا</li></ul></div>
+      <div class="card-lg rv"><div class="ico">🔷</div><h4>عرض التغطية المرئي</h4><p>شاهد منطقة التغطية لكل كاميرا بشكل مرئي وواضح</p><ul><li>أشكال هندسية للتغطية</li><li>تمييز بالألوان</li><li>تحديث فوري عند التعديل</li></ul></div>
+      <div class="card-lg rv d1"><div class="ico">📊</div><h4>إحصائيات شاملة</h4><p>عرض معلومات كاملة عن المشروع في الوقت الفعلي</p><ul><li>عدد الكاميرات والأجهزة</li><li>طول الكابلات الإجمالي</li><li>معلومات كل عنصر</li><li>التاريخ واسم المشروع</li></ul></div>
+      <div class="card-lg rv d2"><div class="ico">💾</div><h4>الحفظ والتصدير</h4><p>احفظ مشاريعك وصدرها بصيغ متعددة</p><ul><li>حفظ المشروع كملف JSON</li><li>فتح المشاريع المحفوظة</li><li>تصدير كصورة (قريباً)</li><li>حفظ جميع التفاصيل</li></ul></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">خطوات الاستخدام</span>
+    <h2 class="st">خطوات الاستخدام <em>التفصيلية</em></h2>
+    <p class="sd">8 خطوات بسيطة من رفع المخطط إلى التصدير النهائي</p>
+    <div class="step rv"><div class="step-num">1</div><div><h4>إنشاء مشروع جديد</h4><p>ابدأ برفع صورة المخطط المعماري للمكان المراد تأمينه</p><div class="step-tips"><strong>💡 نصائح:</strong><span>استخدم صور واضحة وعالية الجودة</span><span>تأكد من وضوح التفاصيل المهمة</span></div></div></div>
+    <div class="step rv"><div class="step-num">2</div><div><h4>إعداد المشروع والمقياس</h4><p>أدخل اسم المشروع وحدد المقياس من خلال مسافة معروفة</p><div class="step-tips"><strong>💡 نصائح:</strong><span>اختر اسماً واضحاً للمشروع</span><span>استخدم مسافة سهلة القياس (باب، جدار، غرفة)</span><span>يمكنك تعديل المقياس لاحقاً إذا لزم الأمر</span></div></div></div>
+    <div class="step rv"><div class="step-num">3</div><div><h4>إضافة الكاميرات</h4><p>اضغط على المخطط لإضافة كاميرات في المواقع المطلوبة</p><div class="step-tips"><strong>💡 نصائح:</strong><span>ضع الكاميرات في الزوايا الاستراتيجية</span><span>احرص على تغطية المداخل والنقاط الحرجة</span><span>يمكنك سحب الكاميرات لتغيير موقعها</span></div></div></div>
+    <div class="step rv"><div class="step-num">4</div><div><h4>ضبط إعدادات الكاميرات</h4><p>اختر كل كاميرا لضبط الزاوية والفتحة وإضافة المعلومات</p><div class="step-tips"><strong>💡 نصائح:</strong><span>اختر فتحة العدسة المناسبة للإضاءة</span><span>عدّل زاوية الرؤية حسب المساحة</span><span>أضف التوصيف وعنوان IP</span><span>فعّل خيار 360° للكاميرات البانورامية</span></div></div></div>
+    <div class="step rv"><div class="step-num">5</div><div><h4>إضافة الأجهزة</h4><p>أضف أجهزة DVR/NVR والسويتشات في مواقعها</p><div class="step-tips"><strong>💡 نصائح:</strong><span>حدد عدد القنوات المطلوبة</span><span>ضع الأجهزة في مواقع يسهل الوصول إليها</span><span>راعِ المسافات للكابلات</span></div></div></div>
+    <div class="step rv"><div class="step-num">6</div><div><h4>رسم الكابلات</h4><p>اختر نوع الكابل وارسم المسارات بين الكاميرات والأجهزة</p><div class="step-tips"><strong>💡 نصائح:</strong><span>استخدم كابل كاميرا للربط بـ DVR</span><span>استخدم كابل أجهزة بين السويتشات</span><span>اضغط Ctrl أثناء الرسم لإضافة نقاط انعطاف</span><span>اختر القناة المناسبة لكل كاميرا</span></div></div></div>
+    <div class="step rv"><div class="step-num">7</div><div><h4>مراجعة التغطية</h4><p>تحقق من التغطية الكاملة وتأكد من عدم وجود نقاط عمياء</p><div class="step-tips"><strong>💡 نصائح:</strong><span>انظر للمناطق غير المغطاة</span><span>راجع تداخل مناطق التغطية</span><span>تحقق من أطوال الكابلات</span><span>راجع عدد القنوات المستخدمة</span></div></div></div>
+    <div class="step rv"><div class="step-num">8</div><div><h4>الحفظ والتصدير</h4><p>احفظ المشروع كملف JSON وشاركه مع فريقك أو العميل</p><div class="step-tips"><strong>💡 نصائح:</strong><span>احفظ نسخة احتياطية من المشروع</span><span>استخدم اسم ملف واضح</span><span>يمكنك فتح المشروع لاحقاً للتعديل</span></div></div></div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn">
+    <span class="sl">نصائح وتحذيرات</span>
+    <h2 class="st">نصائح <em>للتخطيط الأمثل</em></h2>
+    <div class="tips-grid">
+      <div class="tips-card good rv"><h3>💡 نصائح للتخطيط الأمثل</h3><ul><li>ابدأ بتحديد النقاط الحرجة التي تحتاج تغطية كاملة</li><li>استخدم كاميرات 360 درجة في الأماكن المفتوحة</li><li>راعِ إضاءة المكان عند اختيار فتحة العدسة</li><li>خطط مسارات الكابلات لتقليل التكاليف</li><li>احتفظ بنسخة احتياطية من كل مشروع</li></ul></div>
+      <div class="tips-card bad rv d1"><h3>⚠️ أخطاء شائعة يجب تجنبها</h3><ul><li>عدم ضبط المقياس بدقة في البداية</li><li>تجاهل النقاط العمياء بين الكاميرات</li><li>عدم حساب أطوال الكابلات المطلوبة</li><li>وضع الكاميرات في أماكن يصعب صيانتها</li><li>نسيان حفظ المشروع قبل الإغلاق</li></ul></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">التقنيات المستخدمة</span>
+    <h2 class="st">البنية <em>التقنية</em></h2>
+    <div class="tech-g">
+      <div class="tech rv"><h4>حسابات رياضية دقيقة</h4><p>لحساب زوايا الرؤية وأعماق التغطية</p></div>
+      <div class="tech rv d1"><h4>خوارزميات هندسية متقدمة</h4><p>لرسم مناطق التغطية بشكل دقيق</p></div>
+      <div class="tech rv d2"><h4>واجهة React تفاعلية</h4><p>لتجربة مستخدم سلسة وسريعة</p></div>
+      <div class="tech rv d3"><h4>Context API لإدارة الحالة</h4><p>لتنسيق البيانات بين المكونات</p></div>
+      <div class="tech rv"><h4>Canvas API للرسم</h4><p>لرسم الأشكال والكابلات ديناميكياً</p></div>
+      <div class="tech rv d1"><h4>localStorage للتخزين</h4><p>لحفظ التفضيلات والإعدادات</p></div>
+      <div class="tech rv d2"><h4>نظام الثيمات الذكي</h4><p>للتبديل بين الوضع الفاتح والداكن</p></div>
+      <div class="tech rv d3"><h4>معالجة الصور المتقدمة</h4><p>لدعم صيغ مختلفة وتحسين الأداء</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn" style="text-align:center">
+    <div style="font-size:2.5rem;margin-bottom:12px">🚀</div>
+    <h2 class="st" style="text-align:center">جاهز لتحسين <em>خدماتك</em>؟</h2>
+    <p class="sd" style="margin:0 auto 28px;text-align:center">انضم إلى شركات الأمان والمراقبة التي تستخدم Camera Planner لتخطيط أنظمة المراقبة بدقة وزيادة رضا العملاء</p>
+    <div class="hero-btns">
+      <a href="https://camera-planner-2fc4gindt-kosay-alassafs-projects.vercel.app/" target="_blank" rel="noopener" class="bp">ابدأ التخطيط الآن ←</a>
+      <a href="index.html#contact" class="bsb">تواصل مع Pro S;</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="ft" aria-label="Site footer"></footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

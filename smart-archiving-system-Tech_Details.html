@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>نظام الأرشفة الذكية — إدارة وثائق ومراسلات | Pro S;</title>
+<meta name="description" content="نظام الأرشفة الذكية من Pro S; — حل متكامل لإدارة المراسلات والوثائق للمؤسسات الحكومية والشركات التجارية والهندسية مع تشفير، بحث ذكي، ودعم كامل للعربية.">
+<meta name="keywords" content="نظام أرشفة, Smart Archiving, إدارة المراسلات, إدارة الوثائق, OCR عربي, تشفير وثائق, Audit Trail, Pro S">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0d9373">
+<link rel="canonical" href="https://kusaisssd.github.io/ProS-website/smart-archiving-system-Tech_Details.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pro S;">
+<meta property="og:locale" content="ar_SY">
+<meta property="og:title" content="نظام الأرشفة الذكية — Pro S;">
+<meta property="og:description" content="إدارة وثائق ومراسلات احترافية مع تشفير، بحث ذكي، ومشاركة آمنة عبر الويب.">
+<meta property="og:url" content="https://kusaisssd.github.io/ProS-website/smart-archiving-system-Tech_Details.html">
+<meta property="og:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="نظام الأرشفة الذكية — Pro S;">
+<meta name="twitter:description" content="حل متكامل لإدارة المراسلات والوثائق مع تشفير وبحث ذكي.">
+<meta name="twitter:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Smart Archiving System",
+      "description": "Comprehensive document and correspondence management system for government, engineering, and commercial organizations — with advanced encryption, intelligent full-text search, OCR, and secure web sharing.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Windows Server, Linux",
+      "publisher": {"@type":"Organization","name":"Pro S;","url":"https://kusaisssd.github.io/ProS-website/"},
+      "featureList": [
+        "Document & correspondence management",
+        "Full-text search inside documents",
+        "OCR & AI classification",
+        "Advanced encryption & access control",
+        "Comprehensive audit trail",
+        "Secure web sharing"
+      ],
+      "offers": {"@type":"Offer","priceSpecification":{"@type":"PriceSpecification","priceCurrency":"USD"}},
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://kusaisssd.github.io/ProS-website/"},
+        {"@type":"ListItem","position":2,"name":"المنتجات","item":"https://kusaisssd.github.io/ProS-website/#products"},
+        {"@type":"ListItem","position":3,"name":"نظام الأرشفة الذكية","item":"https://kusaisssd.github.io/ProS-website/smart-archiving-system-Tech_Details.html"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+/* ===== Smart Archiving — page-specific styles ===== */
+body{line-height:1.8}
+section{padding:80px 0}
+.st{font-size:clamp(1.6rem,3vw,2.2rem)}
+.sd{font-size:.95rem;max-width:600px;margin-bottom:36px}
+
+.geo-bg .gs:nth-child(1){width:350px;height:350px;background:var(--geo-1);top:8%;right:-5%;animation-duration:25s}
+.geo-bg .gs:nth-child(2){width:250px;height:250px;border:1.5px solid var(--geo-s);top:30%;left:5%;animation-delay:-6s;animation-duration:22s}
+.geo-bg .gs:nth-child(3){width:200px;height:200px;background:var(--geo-1);bottom:15%;right:10%;animation-delay:-12s;animation-duration:28s}
+
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.feat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:22px 20px;transition:all .3s;box-shadow:var(--s1)}
+.feat:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.feat h4{font-size:.9rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.feat p{font-size:.82rem;color:var(--tx2);line-height:1.55}
+
+.spec-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 32px;margin-bottom:24px;box-shadow:var(--s1);transition:all .3s}
+.spec-card:hover{box-shadow:var(--s3);border-color:var(--ac-m)}
+.spec-header{display:flex;align-items:center;gap:14px;margin-bottom:18px;cursor:pointer}
+.spec-ico{width:48px;height:48px;border-radius:12px;background:var(--ac-l);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.spec-header h3{font-size:1.1rem;font-weight:800}
+.spec-header p{font-size:.82rem;color:var(--txm);margin-top:2px}
+.spec-toggle{margin-right:auto;margin-left:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .3s;cursor:pointer;flex-shrink:0;color:var(--txm)}
+.spec-toggle.open{transform:rotate(180deg);color:var(--ac);border-color:var(--ac)}
+.spec-body{display:none;padding-top:18px;border-top:1px solid var(--border)}
+.spec-body.open{display:block}
+.spec-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.spec-col h4{font-size:.82rem;font-weight:700;color:var(--ac);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.spec-col ul{list-style:none}
+.spec-col li{font-size:.82rem;color:var(--tx2);padding:3px 0 3px 18px;position:relative;line-height:1.5}
+.spec-col li::before{content:'✓';position:absolute;right:0;color:var(--ac);font-weight:700;font-size:.76rem}
+.spec-col.premium li::before{content:'★';color:var(--ac-deep)}
+.spec-desc{font-size:.85rem;color:var(--tx2);line-height:1.7;margin-bottom:16px;padding:14px 18px;background:var(--bg-2);border-radius:10px}
+
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.price-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px 30px;box-shadow:var(--s1);transition:all .3s;position:relative;overflow:hidden}
+.price-card:hover{box-shadow:var(--s4);border-color:var(--ac-m)}
+.price-card.featured{border-color:var(--ac);box-shadow:0 4px 24px var(--ac-g)}
+.price-card.featured::before{content:'الأكثر طلباً';position:absolute;top:16px;left:-32px;background:var(--ac);color:#fff;font-size:.65rem;font-weight:700;padding:4px 40px;transform:rotate(45deg)}
+.price-ico{font-size:2rem;margin-bottom:12px}
+.price-card h3{font-size:1.2rem;font-weight:800;margin-bottom:4px}
+.price-card .price-sub{font-size:.78rem;color:var(--txm);margin-bottom:4px;font-family:var(--fm)}
+.price-card .price-target{font-size:.85rem;color:var(--tx2);margin-bottom:18px}
+.price-list{list-style:none;margin-bottom:20px}
+.price-list li{font-size:.84rem;color:var(--tx2);padding:5px 0 5px 20px;position:relative}
+.price-list li::before{content:'✓';position:absolute;right:0;color:var(--ac);font-weight:700}
+.price-license{padding-top:16px;border-top:1px solid var(--border);font-size:.83rem;color:var(--tx2)}
+.price-license strong{color:var(--ac)}
+
+.req-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.req-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:26px 22px;box-shadow:var(--s1)}
+.req-card h4{font-size:.95rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.req-card ul{list-style:none}
+.req-card li{font-size:.83rem;color:var(--tx2);padding:4px 0;line-height:1.5}
+.req-card li strong{color:var(--tx)}
+
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.why{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;text-align:center;transition:all .3s;box-shadow:var(--s1)}
+.why:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.why-ico{font-size:1.6rem;margin-bottom:8px}
+.why h4{font-size:.9rem;font-weight:700;margin-bottom:4px}
+.why p{font-size:.78rem;color:var(--txm);line-height:1.5}
+
+.guar-list{list-style:none}
+.guar-list li{font-size:.9rem;color:var(--tx2);padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--border-l)}
+.guar-list li::before{content:'✅';position:absolute;right:0}
+.guar-list li strong{color:var(--tx)}
+
+.contact-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:36px;text-align:center;box-shadow:var(--s1)}
+.contact-box h3{font-family:var(--fd);font-size:1.4rem;font-weight:800;margin-bottom:6px}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.contact-item{padding:16px;background:var(--ac-l);border-radius:12px;font-size:.83rem;color:var(--tx2)}
+.contact-item strong{display:block;color:var(--tx);margin-bottom:4px}
+.contact-item a{color:var(--ac);text-decoration:none}
+
+@media(max-width:1024px){.spec-cols{grid-template-columns:1fr}.pricing-grid,.req-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.spec-card{padding:24px 20px}}
+</style>
+</head>
+<body data-layout="sub" data-page="archiving">
+<div class="geo-bg"><div class="gs"></div><div class="gs"></div><div class="gs"></div></div>
+<div class="dot-grid"></div>
+
+<nav id="nav" aria-label="Main navigation"></nav>
+
+<main id="main">
+<section class="p-hero">
+  <div class="ctn">
+    <div class="p-hero-badge">📁 Enterprise System — Pro S;</div>
+    <h1>نظام الأرشفة <em>الذكية</em></h1>
+    <p class="p-hero-sub">حل متكامل لإدارة المراسلات والوثائق مصمم خصيصاً للمؤسسات الحكومية والشركات التجارية والهندسية. يجمع النظام بين سهولة الاستخدام والأمان العالي مع دعم كامل للغة العربية وواجهات مستخدم حديثة.</p>
+    <div class="p-hero-tags">
+      <span class="p-hero-tag">ASP.NET Core</span>
+      <span class="p-hero-tag">SQL Server</span>
+      <span class="p-hero-tag">Encryption</span>
+      <span class="p-hero-tag">REST API</span>
+      <span class="p-hero-tag">RTL Support</span>
+    </div>
+    <div class="hero-btns">
+      <a href="index.html#contact" class="bp">اطلب عرض سعر ←</a>
+      <a href="#specs" class="bsb">المواصفات التفصيلية</a>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">المميزات الرئيسية</span>
+    <h2 class="st"><em>مميزات</em> النظام</h2>
+    <div class="feat-grid">
+      <div class="feat rv"><h4>📁 إدارة الوثائق</h4><p>إدارة شاملة للمستندات بمختلف أنواعها وللمراسلات الواردة والصادرة والداخلية</p></div>
+      <div class="feat rv d1"><h4>🔒 أمان متقدم</h4><p>نظام أمان متعدد المستويات مع تشفير البيانات وصلاحيات دقيقة</p></div>
+      <div class="feat rv d2"><h4>🔍 بحث ذكي</h4><p>بحث متقدم وفهرسة ذكية للوثائق مع إمكانية البحث داخل المستندات</p></div>
+      <div class="feat rv d3"><h4>📊 تقارير شاملة</h4><p>تقارير تفصيلية وإحصائيات شاملة مع رسوم بيانية تفاعلية</p></div>
+      <div class="feat rv"><h4>🌳 بنية شجرية مرنة</h4><p>إنشاء شجرة الملفات وفق الترتيب المناسب للشركة بمستويات متعددة</p></div>
+      <div class="feat rv d1"><h4>👁️ معاينة مباشرة</h4><p>معاينة مباشرة للملفات داخل النظام — PDF, Word, Excel, Images</p></div>
+      <div class="feat rv d2"><h4>📱 تصميم متجاوب</h4><p>واجهات مستخدم سريعة الاستجابة تعمل على جميع الأجهزة</p></div>
+      <div class="feat rv d3"><h4>🔗 تتبع المراسلات</h4><p>تتبع كامل لسير المراسلات والإجراءات مع Timeline تفاعلي</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section id="specs">
+  <div class="ctn">
+    <span class="sl">المواصفات الفنية</span>
+    <h2 class="st">المواصفات <em>التفصيلية</em></h2>
+    <p class="sd">استعرض كل وحدة من وحدات النظام — الوظائف الأساسية والإضافية المتقدمة</p>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">📁</div>
+        <div><h3>الوثائق والأرشفة</h3><p>نظام شامل لإدارة جميع أنواع الوثائق</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-desc">يدعم جميع أنواع الملفات: PDF, Word, Excel, صور, فيديو, ملفات هندسية (DWG, PSD) وأي نوع آخر بشكل مرن. يتضمن عنوان وتفاصيل المستند، المشروع والقسم، التصنيفات، السمات والكلمات المفتاحية، ودرجة السرية والتشفير. جميع التعريفات ديناميكية قابلة للتعديل حسب العمل.</div>
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>رفع ملفات متعدد (Drag & Drop)</li><li>دعم حجوم حتى 500MB</li><li>معاينة مباشرة (PDF, Images)</li><li>تنزيل وطباعة</li><li>فهرسة الوثائق</li><li>البحث والفلترة وفق بيانات المستندات</li><li>البحث داخل المستندات</li><li>ربط بالمراسلات والمشاريع</li><li>بنية شجرية مرنة متعددة المستويات</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية (اختيارية)</h4><ul>
+            <li>OCR — استخراج نص من صور وتحويل PDF</li><li>تحليل ذكي — تصنيف تلقائي واستخلاص البيانات</li><li>إصدارات الوثائق (Versioning)</li><li>سلة المحذوفات</li><li>سير عمل الموافقات وتواريخ انتهاء</li><li>أرشفة طويلة الأمد</li><li>أرشفة سحابية (Google Drive, OneDrive, Mega, Dropbox)</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">📨</div>
+        <div><h3>إدارة المراسلات</h3><p>إدارة شاملة للمراسلات الواردة والصادرة والداخلية</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-desc">نظام شامل لإدارة جميع أنواع المراسلات مع تتبع كامل للحركة والردود. يتضمن رقم المراسلة (توليد تلقائي)، التاريخ، النوع، من/إلى، الموضوع، الإجراء المطلوب، والمرفقات.</div>
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>توليد تلقائي لأرقام المراسلات</li><li>إدارة الواردة والصادرة والداخلية</li><li>ربط المراسلات (رد على مراسلة)</li><li>عرض هرمي للمراسلات والردود</li><li>Timeline زمني تفاعلي</li><li>نظام مرفقات (رفع متعدد)</li><li>معاينة الملفات</li><li>Soft Delete (حذف آمن)</li><li>تتبع التعديلات (Audit Trail)</li><li>بحث أساسي وفلترة</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>OCR و AI — استخراج نص وتحليل وتصنيف ذكي</li><li>التوقيع الإلكتروني وسلسلة موافقات</li><li>أرشفة تلقائية حسب الفترة الزمنية</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">📂</div>
+        <div><h3>المشاريع والعملاء</h3><p>إدارة مشاريع هندسية وربطها بالمراسلات</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-desc">يتضمن اسم ورقم المشروع، العميل والموقع، تاريخ البداية والنهاية، الميزانية والحالة، والمراسلات المرتبطة.</div>
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>إنشاء وإدارة المشاريع</li><li>ربط المراسلات بالمشاريع</li><li>إدارة معلومات العملاء</li><li>تتبع حالة المشاريع</li><li>إحصائيات لكل مشروع</li><li>بحث حسب المشروع/العميل</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>إدارة المهام ومراحل المشروع + Gantt Chart</li><li>تكامل مالي — ربط فواتير ومتابعة دفعات</li><li>إدارة الفريق — تعيين مهام وتتبع الإنجاز</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">🔍</div>
+        <div><h3>البحث والفهرسة</h3><p>محرك بحث متقدم مع فهرسة ذكية</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>بحث نصي شامل</li><li>بحث متقدم متعدد المعايير</li><li>فلترة حسب النوع والتاريخ والحالة</li><li>فلترة حسب المشروع والعميل</li><li>حفظ عمليات البحث المفضلة</li><li>فهرسة أسماء الملفات</li><li>نتائج مرتبة حسب الصلة</li><li>تصدير نتائج البحث</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>Full-Text Search — فهرسة محتوى الملفات والبحث داخل PDF/Word</li><li>دعم Arabic NLP</li><li>البحث الصوتي — تحويل صوت لنص</li><li>بحث ذكي بالـ AI — فهم السياق واقتراحات ذكية وبحث دلالي</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">🔒</div>
+        <div><h3>الأمان والصلاحيات</h3><p>نظام أمان متعدد المستويات</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>نظام مصادقة آمن</li><li>إدارة المستخدمين والأدوار</li><li>صلاحيات حسب المشاريع</li><li>صلاحيات حسب التصنيفات ضمن المشاريع</li><li>تشفير معرفات المراسلات</li><li>Audit Log لجميع العمليات</li><li>جلسات آمنة ومحدودة الوقت</li><li>حماية من CSRF/XSS</li><li>Soft Delete للبيانات الحساسة</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>مصادقة ثنائية (2FA) — SMS/Email/Authenticator</li><li>Single Sign-On (SSO) — Active Directory, OAuth 2.0, SAML</li><li>تشفير متقدم للملفات وتوقيع رقمي</li><li>صلاحيات على مستوى الحقول — إخفاء حقول حساسة</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">📊</div>
+        <div><h3>التقارير والإحصائيات</h3><p>نظام تقارير شامل مع رسوم بيانية تفاعلية</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>تقرير المراسلات (حسب الفترة)</li><li>إحصائيات الوارد/الصادر</li><li>تقرير المراسلات المعلقة</li><li>أداء الموظفين</li><li>رسوم بيانية تفاعلية</li><li>تصدير PDF/Excel</li><li>طباعة مباشرة</li><li>فلترة متقدمة</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>لوحات تحكم تفاعلية (Dashboards) مع Real-time updates</li><li>تقارير مجدولة — إرسال تلقائي عبر Email/SMS</li><li>تحليل اتجاهات وتوقعات ذكية و KPIs مخصصة</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">🔔</div>
+        <div><h3>الإشعارات والتنبيهات</h3><p>نظام إشعارات لحظي ومتعدد القنوات</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>إشعارات داخل النظام</li><li>تنبيهات المواعيد النهائية</li><li>إشعار بالتكليفات الجديدة</li><li>تنبيهات المراسلات العاجلة</li><li>علامة مقروء/غير مقروء</li><li>مركز إشعارات موحد</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>إشعارات Email — ملخصات يومية وتنبيهات فورية</li><li>إشعارات SMS — تنبيهات عاجلة</li><li>Push Notifications — تطبيق الموبايل</li><li>تكامل Teams/Slack</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">🖥️</div>
+        <div><h3>الواجهات والتكامل</h3><p>واجهات حديثة وسريعة الاستجابة</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>واجهة ويب حديثة (Responsive)</li><li>دعم كامل للعربية (RTL)</li><li>ثيمات متعددة (فاتح/داكن)</li><li>تخصيص لكل مستخدم</li><li>دعم جميع المتصفحات</li><li>سرعة عالية وأداء ممتاز</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>تطبيق موبايل (iOS & Android) مع عمل Offline</li><li>REST API — تكامل مع أنظمة أخرى + Webhooks</li><li>تصدير/استيراد — Excel, CSV, JSON واستيراد جماعي</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">💾</div>
+        <div><h3>النسخ الاحتياطي</h3><p>نظام نسخ احتياطي تلقائي وآمن</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-cols">
+          <div class="spec-col"><h4>الوظائف الأساسية</h4><ul>
+            <li>نسخ احتياطي يدوي لقاعدة البيانات</li><li>استعادة من النسخة الأخيرة</li><li>تصدير البيانات</li><li>سجل النسخ الاحتياطي</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>الوظائف الإضافية</h4><ul>
+            <li>نسخ احتياطي تلقائي — جدولة يومية/أسبوعية</li><li>نسخ احتياطي للملفات</li><li>النسخ السحابي (Azure/AWS) مع تشفير</li><li>Disaster Recovery — خطة استرجاع كاملة وHigh Availability</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card rv">
+      <div class="spec-header" onclick="toggleSpec(this)">
+        <div class="spec-ico">🔗</div>
+        <div><h3>الربط والمشاركة</h3><p>ترحيل البيانات ومشاركة آمنة عبر الويب</p></div>
+        <div class="spec-toggle">▼</div>
+      </div>
+      <div class="spec-body">
+        <div class="spec-desc">ترحيل الملفات من البنية الحالية للشركة إلى النظام دون إدخال يدوي، مع إمكانية مشاركة ملفات ومجلدات عبر الإنترنت بروابط آمنة.</div>
+        <div class="spec-cols">
+          <div class="spec-col premium"><h4>استيراد تلقائي (إضافي)</h4><ul>
+            <li>استيراد الملفات من البنية الشجرية الحالية</li><li>استخلاص ذكي للمعلومات والتصنيفات</li>
+          </ul></div>
+          <div class="spec-col premium"><h4>المشاركة عبر الويب (إضافي)</h4><ul>
+            <li>إنشاء روابط مشاركة مخصصة لكل ملف/مجلد</li><li>صلاحيات عرض/تحميل</li><li>حماية بكلمات مرور وتاريخ انتهاء</li><li>تشفير البيانات أثناء المشاركة</li><li>تتبع عمليات الوصول والتنزيل</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">نماذج الترخيص</span>
+    <h2 class="st">الأسعار <em>والباقات</em></h2>
+    <p class="sd">نقدم خطتين مرنتين تناسب مختلف أحجام المؤسسات مع إمكانية التخصيص حسب احتياجاتكم</p>
+    <div class="pricing-grid">
+      <div class="price-card rv">
+        <div class="price-ico">🏢</div>
+        <h3>النسخة الأساسية</h3>
+        <div class="price-sub">Standard Edition</div>
+        <p class="price-target">مناسبة للمؤسسات الصغيرة والمتوسطة</p>
+        <ul class="price-list">
+          <li>جميع الوظائف الأساسية للنظام</li>
+          <li>حتى 5 مستخدمين (مع إمكانية إضافة أي عدد محدد حسب الحاجة)</li>
+          <li>تخزين حتى 100GB</li>
+          <li>دعم فني عن بعد</li>
+          <li>تحديثات إصلاحية مجانية لمدة سنة</li>
+        </ul>
+        <div class="price-license">
+          <strong>نموذج الترخيص:</strong><br>
+          ترخيص لمرة واحدة مع صيانة سنوية — أو اشتراك شهري / سنوي
+        </div>
+      </div>
+      <div class="price-card featured rv d1">
+        <div class="price-ico">🏆</div>
+        <h3>النسخة المتقدمة</h3>
+        <div class="price-sub">Advanced / Enterprise Edition</div>
+        <p class="price-target">مناسبة للمؤسسات الكبيرة والجهات الحكومية</p>
+        <ul class="price-list">
+          <li>جميع مميزات النسخة الأساسية</li>
+          <li>مستخدمون غير محدودين</li>
+          <li>سعات تخزين كبيرة وقابلة للتوسّع</li>
+          <li>إمكانية إضافة وتخصيص الوظائف حسب الحاجة</li>
+          <li>تكامل مع الأنظمة القائمة</li>
+          <li>دعم فني متقدم مع اتفاقية مستوى خدمة (SLA)</li>
+          <li>تدريب واستشارات تقنية</li>
+        </ul>
+        <div class="price-license">
+          <strong>نموذج الترخيص:</strong><br>
+          تسعير مرن حسب المتطلبات — عرض سعر مخصص مع خصومات على الباقات
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn">
+    <span class="sl">المتطلبات التقنية</span>
+    <h2 class="st">البيئة <em>التقنية</em></h2>
+    <div class="req-grid">
+      <div class="req-card rv">
+        <h4>🖥️ متطلبات السيرفر</h4>
+        <ul>
+          <li><strong>نظام التشغيل:</strong> Windows Server 2019+ أو Linux (Ubuntu 20.04+)</li>
+          <li><strong>المعالج:</strong> 4 Cores أو أعلى</li>
+          <li><strong>الذاكرة:</strong> 8GB RAM (16GB موصى به)</li>
+          <li><strong>التخزين:</strong> 100GB (حسب حجم البيانات)</li>
+          <li><strong>قاعدة البيانات:</strong> SQL Server 2019+ أو PostgreSQL 13+</li>
+        </ul>
+      </div>
+      <div class="req-card rv d1">
+        <h4>🌐 متطلبات العميل</h4>
+        <ul>
+          <li><strong>المتصفح:</strong> Chrome, Firefox, Edge, Safari (أحدث إصدار)</li>
+          <li><strong>الاتصال:</strong> 1 Mbps أو أعلى</li>
+          <li><strong>دقة الشاشة:</strong> 1366x768 أو أعلى</li>
+          <li><strong>JavaScript:</strong> مفعّل</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">ضمانات الخدمة</span>
+    <h2 class="st">ضمانات <em>وشروط</em> الخدمة</h2>
+    <ul class="guar-list">
+      <li><strong>ضمان الجودة:</strong> اختبار شامل قبل التسليم</li>
+      <li><strong>ضمان الأداء:</strong> استجابة سريعة وأداء عالي</li>
+      <li><strong>أمان البيانات:</strong> حماية وتشفير متقدم</li>
+      <li><strong>التحديثات:</strong> تحديثات دورية للأمان والميزات</li>
+      <li><strong>الدعم:</strong> دعم فني مستمر حسب الباقة</li>
+      <li><strong>التدريب:</strong> تدريب شامل للمستخدمين</li>
+    </ul>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section>
+  <div class="ctn">
+    <span class="sl">لماذا نظامنا</span>
+    <h2 class="st">لماذا نظام الأرشفة <em>الذكية</em>؟</h2>
+    <div class="why-grid">
+      <div class="why rv"><div class="why-ico">🎯</div><h4>سهولة الاستخدام</h4><p>واجهات بديهية باللغة العربية لا تحتاج خبرة تقنية</p></div>
+      <div class="why rv d1"><div class="why-ico">🔒</div><h4>أمان عالي</h4><p>حماية متعددة المستويات وتشفير البيانات الحساسة</p></div>
+      <div class="why rv d2"><div class="why-ico">⚡</div><h4>أداء ممتاز</h4><p>تقنيات حديثة تضمن سرعة واستجابة فورية</p></div>
+      <div class="why rv d3"><div class="why-ico">🛠️</div><h4>قابل للتوسع</h4><p>يمكن إضافة مستخدمين ووحدات جديدة بسهولة</p></div>
+      <div class="why rv"><div class="why-ico">🌍</div><h4>دعم كامل للعربية</h4><p>مصمم خصيصاً للبيئة العربية مع RTL كامل</p></div>
+      <div class="why rv d1"><div class="why-ico">💼</div><h4>دعم محترف</h4><p>فريق دعم فني متخصص جاهز للمساعدة</p></div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<section class="s-alt">
+  <div class="ctn">
+    <div class="contact-box">
+      <h3>للاستفسار والتواصل</h3>
+      <p style="font-size:1rem;color:var(--tx2);margin-bottom:6px">Pro S; — As Smart As Simple</p>
+      <div class="contact-grid">
+        <div class="contact-item"><strong>📧 البريد الإلكتروني</strong><a href="mailto:info@pro-sss.com">info@pro-sss.com</a><br><a href="mailto:kosayalassaf@gmail.com">kosayalassaf@gmail.com</a></div>
+        <div class="contact-item"><strong>📱 الهاتف</strong><a href="tel:+963966654441">+963-966654441</a></div>
+        <div class="contact-item"><strong>🌐 الموقع</strong><a href="index.html">الرئيسية</a></div>
+        <div class="contact-item"><strong>📍 العنوان</strong>دمشق، سوريا</div>
+      </div>
+      <p style="margin-top:20px;font-size:.82rem;color:var(--txm)"><strong>ملاحظة:</strong> الأسعار والمواصفات قابلة للتعديل حسب المتطلبات</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="ft" aria-label="Site footer"></footer>
+
+<script src="assets/main.js" defer></script>
+<script>
+function toggleSpec(header){var body=header.nextElementSibling;var toggle=header.querySelector('.spec-toggle');body.classList.toggle('open');toggle.classList.toggle('open')}
+</script>
+</body>
+</html>

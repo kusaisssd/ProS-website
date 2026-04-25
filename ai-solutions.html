@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Solutions — Custom AI Systems for Enterprise | Pro S;</title>
+<meta name="description" content="Pro S; builds custom AI systems trained on your organization's data — internal assistants, document intelligence, predictive analytics, and AI-powered automation. Your data stays yours.">
+<meta name="keywords" content="custom AI, enterprise AI, RAG, fine-tuning, internal AI assistant, document intelligence, predictive analytics, AI automation, computer vision, on-premise AI, private AI, Pro S">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0d9373">
+<link rel="canonical" href="https://kusaisssd.github.io/ProS-website/ai-solutions.html">
+<link rel="alternate" hreflang="en" href="https://kusaisssd.github.io/ProS-website/ai-solutions.html">
+<link rel="alternate" hreflang="ar" href="https://kusaisssd.github.io/ProS-website/ai-solutions-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://kusaisssd.github.io/ProS-website/ai-solutions.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pro S;">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="AI Solutions — Custom AI Systems for Enterprise | Pro S;">
+<meta property="og:description" content="Custom AI systems trained on your data. Internal assistants, document intelligence, predictive analytics, and automation — built for your organization.">
+<meta property="og:url" content="https://kusaisssd.github.io/ProS-website/ai-solutions.html">
+<meta property="og:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Solutions — Pro S;">
+<meta name="twitter:description" content="Custom AI systems trained on your organization's data, deployed internally.">
+<meta name="twitter:image" content="https://kusaisssd.github.io/ProS-website/assets/favicon.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Custom AI Solutions",
+      "serviceType": "Artificial Intelligence Development",
+      "description": "Custom AI systems trained on organization-specific data: RAG, fine-tuned models, internal assistants, document intelligence, predictive analytics, AI-powered automation, and computer vision.",
+      "provider": {"@type":"Organization","name":"Pro S;","url":"https://kusaisssd.github.io/ProS-website/"},
+      "areaServed": ["Syria", "Middle East", "Worldwide"],
+      "offers": {
+        "@type": "OfferCatalog",
+        "name": "AI Solutions Catalog",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom AI on Your Data (RAG / Fine-tuning)"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Internal AI Assistants"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Document Intelligence"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Predictive Analytics"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"AI-Powered Automation"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Computer Vision"}}
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://kusaisssd.github.io/ProS-website/"},
+        {"@type":"ListItem","position":2,"name":"AI Solutions","item":"https://kusaisssd.github.io/ProS-website/ai-solutions.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type":"Question",
+          "name":"How is custom AI different from using ChatGPT?",
+          "acceptedAnswer":{"@type":"Answer","text":"Generic LLMs don't know your business. We train AI on your specific documents, processes, and history — so it understands your terminology, follows your policies, and produces outputs grounded in your actual data."}
+        },
+        {
+          "@type":"Question",
+          "name":"Does my data leave our infrastructure?",
+          "acceptedAnswer":{"@type":"Answer","text":"You choose. We support fully on-premise deployments using local open-source models (Llama, Mistral, Qwen) or hybrid setups. Your sensitive data can stay entirely within your infrastructure."}
+        },
+        {
+          "@type":"Question",
+          "name":"What does an AI engagement typically look like?",
+          "acceptedAnswer":{"@type":"Answer","text":"Discovery (1-2 weeks) → Design & data prep (2-3 weeks) → Build & train (4-8 weeks) → Pilot deployment (2-4 weeks) → Iterate & scale. Most engagements deliver a working pilot in 8-12 weeks."}
+        },
+        {
+          "@type":"Question",
+          "name":"What if our data is messy or in Arabic?",
+          "acceptedAnswer":{"@type":"Answer","text":"Both are common. We handle data cleaning and structuring as part of the engagement, and our systems support Arabic NLP, RTL documents, and bilingual workflows natively."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ===== ai-solutions.html — page-specific styles ===== */
+section{padding:80px 0}
+.st{font-size:clamp(1.7rem,3.2vw,2.4rem)}
+.sd{font-size:.98rem;max-width:640px;margin-bottom:36px}
+
+.geo-bg .gs:nth-child(1){width:400px;height:400px;background:var(--geo-1);top:5%;right:-5%;animation-duration:25s}
+.geo-bg .gs:nth-child(2){width:280px;height:280px;border:1.5px solid var(--geo-s);top:30%;left:5%;animation-delay:-6s;animation-duration:22s}
+.geo-bg .gs:nth-child(3){width:220px;height:220px;background:var(--geo-1);bottom:15%;right:10%;animation-delay:-12s;animation-duration:28s}
+
+/* HERO — premium */
+.ai-hero{position:relative;z-index:1;padding:140px 0 70px;text-align:center;overflow:hidden}
+.ai-hero::before{content:'';position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,var(--ac-l),transparent 70%);z-index:-1;pointer-events:none}
+[data-theme="dark"] .ai-hero::before{background:radial-gradient(circle,rgba(13,147,115,.1),transparent 70%)}
+.ai-hero-badge{display:inline-flex;align-items:center;gap:10px;padding:7px 18px;border:1px solid var(--ac-m);border-radius:50px;font-size:.7rem;font-weight:700;color:var(--ac);letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px;background:var(--ac-l)}
+.ai-hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--ac);animation:bk2 2s ease-in-out infinite}
+@keyframes bk2{0%,100%{opacity:1}50%{opacity:.3}}
+.ai-hero h1{font-family:var(--fd);font-size:clamp(2.4rem,5.5vw,4rem);font-weight:900;line-height:1.05;margin-bottom:18px;letter-spacing:-.02em}
+.ai-hero h1 em{font-style:normal;color:var(--ac);position:relative;display:inline-block}
+.ai-hero h1 em::after{content:'';position:absolute;left:0;right:0;bottom:6px;height:14px;background:var(--ac-l);z-index:-1;border-radius:6px}
+.ai-hero-sub{font-size:1.1rem;color:var(--tx2);max-width:740px;margin:0 auto 32px;line-height:1.75}
+.ai-hero-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.ai-hero-tag{padding:6px 16px;border-radius:50px;font-size:.74rem;font-weight:600;font-family:var(--fm);background:var(--surface);color:var(--tx2);border:1px solid var(--border);backdrop-filter:blur(8px)}
+.ai-hero-tag.hot{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 2px 12px var(--ac-g)}
+.ai-hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* WHY CUSTOM — comparison cards */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.why-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;transition:all .35s;box-shadow:var(--s1)}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--s4);border-color:var(--ac-m)}
+.why-card.highlight{background:linear-gradient(135deg,var(--ac),var(--ac-deep));color:#fff;border-color:var(--ac);box-shadow:0 12px 36px var(--ac-g)}
+.why-card.highlight h3,.why-card.highlight p,.why-card.highlight li{color:#fff}
+.why-card.highlight li::before{color:#fff}
+.why-tag{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:50px;background:var(--bg-2);color:var(--txm);margin-bottom:14px}
+.why-card.highlight .why-tag{background:rgba(255,255,255,.2);color:#fff}
+.why-card h3{font-family:var(--fd);font-size:1.3rem;font-weight:800;margin-bottom:14px;line-height:1.25}
+.why-card>p{font-size:.92rem;line-height:1.7;color:var(--tx2);margin-bottom:18px}
+.why-card ul{list-style:none}
+.why-card li{font-size:.86rem;color:var(--tx2);padding:5px 0 5px 22px;position:relative;line-height:1.55}
+.why-card li::before{content:'✓';position:absolute;left:0;color:var(--ac);font-weight:800}
+
+/* SOLUTIONS — detailed cards */
+.sol-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.sol-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:34px 30px;transition:all .35s;position:relative;overflow:hidden;box-shadow:var(--s1);backdrop-filter:blur(8px)}
+.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--ac);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.sol-card:hover::before{transform:scaleX(1)}
+.sol-card:hover{transform:translateY(-5px);box-shadow:var(--s4);border-color:var(--ac-m)}
+.sol-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.sol-ico{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--ac-l),var(--ac-m));border:1px solid var(--ac-m);display:flex;align-items:center;justify-content:center;font-size:1.7rem;flex-shrink:0}
+.sol-head h3{font-family:var(--fd);font-size:1.2rem;font-weight:800;line-height:1.2}
+.sol-card>p{font-size:.92rem;color:var(--tx2);line-height:1.7;margin-bottom:18px}
+.sol-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:5px 16px}
+.sol-list li{font-size:.82rem;color:var(--tx2);padding:3px 0 3px 16px;position:relative;line-height:1.5}
+.sol-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--ac);position:absolute;left:0;top:11px}
+
+/* INDUSTRIES */
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ind{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:28px 22px;transition:all .35s;box-shadow:var(--s1);text-align:center}
+.ind:hover{transform:translateY(-4px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.ind-ico{font-size:2rem;margin-bottom:12px}
+.ind h4{font-size:1rem;font-weight:700;margin-bottom:8px}
+.ind p{font-size:.83rem;color:var(--tx2);line-height:1.55}
+.ind-tag{display:inline-block;margin-top:10px;font-size:.7rem;font-weight:600;color:var(--ac);background:var(--ac-l);padding:3px 10px;border-radius:50px}
+
+/* PROCESS — timeline */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:14px}
+.proc-step{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px 18px;text-align:center;transition:all .3s;box-shadow:var(--s1);position:relative}
+.proc-step:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.proc-num{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--ac);color:#fff;font-family:var(--fd);font-size:1.05rem;font-weight:800;margin-bottom:14px;box-shadow:0 4px 12px var(--ac-g)}
+.proc-step h4{font-size:.95rem;font-weight:700;margin-bottom:6px}
+.proc-step p{font-size:.78rem;color:var(--tx2);line-height:1.55}
+.proc-step .proc-time{font-size:.7rem;color:var(--ac);font-weight:600;margin-top:8px;font-family:var(--fm)}
+
+/* TECH STACK */
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px}
+.stack-col{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px;box-shadow:var(--s1)}
+.stack-col h4{font-size:.78rem;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.stack-pills{display:flex;flex-wrap:wrap;gap:6px}
+.stack-pill{padding:5px 12px;border-radius:50px;background:var(--ac-l);color:var(--ac);font-size:.76rem;font-weight:600;font-family:var(--fm);border:1px solid var(--ac-m)}
+
+/* SECURITY */
+.sec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.sec-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:26px 22px;transition:all .3s;box-shadow:var(--s1)}
+.sec-card:hover{transform:translateY(-3px);box-shadow:var(--s3);border-color:var(--ac-m)}
+.sec-ico{display:inline-flex;width:48px;height:48px;border-radius:12px;background:var(--ac-l);align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:12px;border:1px solid var(--ac-m)}
+.sec-card h4{font-size:.98rem;font-weight:700;margin-bottom:6px}
+.sec-card p{font-size:.85rem;color:var(--tx2);line-height:1.65}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto}
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:all .25s;box-shadow:var(--s1)}
+.faq-item:hover{border-color:var(--ac-m)}
+.faq-q{padding:20px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:.98rem;font-weight:600}
+.faq-q::after{content:'＋';color:var(--ac);font-size:1.4rem;font-weight:300;transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 24px 20px;font-size:.9rem;color:var(--tx2);line-height:1.75}
+.faq-item.open .faq-a{display:block}
+
+/* CTA — final */
+.cta-final{text-align:center;padding:60px 40px;background:linear-gradient(135deg,var(--ac),var(--ac-deep));color:#fff;border-radius:24px;box-shadow:0 16px 48px var(--ac-g)}
+.cta-final h2{font-family:var(--fd);font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;line-height:1.15;margin-bottom:14px;color:#fff}
+.cta-final p{font-size:1.05rem;line-height:1.75;color:#fff;opacity:.95;max-width:620px;margin:0 auto 28px}
+.cta-final .bp{background:#fff;color:var(--ac)}
+.cta-final .bp:hover{background:#fff;color:var(--ac-deep);box-shadow:0 10px 32px rgba(0,0,0,.2)}
+.cta-final .bsb{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+.cta-final .bsb:hover{background:rgba(255,255,255,.12);color:#fff;border-color:#fff}
+
+@media(max-width:1024px){
+  .why-grid,.sol-grid{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:1fr 1fr}
+  .proc{grid-template-columns:1fr 1fr}
+  .stack{grid-template-columns:1fr}
+  .sec-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .ai-hero{padding:110px 0 50px}
+  .ind-grid,.proc,.sec-grid,.sol-list{grid-template-columns:1fr}
+  .cta-final{padding:40px 24px}
+}
+</style>
+</head>
+<body data-layout="sub" data-page="ai" data-alt-lang-href="ai-solutions-ar.html">
+<div class="geo-bg"><div class="gs"></div><div class="gs"></div><div class="gs"></div></div>
+<div class="dot-grid"></div>
+
+<nav id="nav" aria-label="Main navigation"></nav>
+
+<main id="main">
+
+<section class="ai-hero">
+  <div class="ctn">
+    <div class="ai-hero-badge">🤖 Custom AI · Pro S;</div>
+    <h1>AI Built on <em>Your Data</em>,<br>Deployed Inside <em>Your Walls</em></h1>
+    <p class="ai-hero-sub">We design and ship custom AI systems trained on your organization's specific knowledge — internal assistants, document intelligence, predictive models, and automation. Generic AI doesn't know your business. Ours does.</p>
+    <div class="ai-hero-tags">
+      <span class="ai-hero-tag hot">RAG</span>
+      <span class="ai-hero-tag hot">Fine-tuning</span>
+      <span class="ai-hero-tag">Local LLMs</span>
+      <span class="ai-hero-tag">Vector DBs</span>
+      <span class="ai-hero-tag">On-premise</span>
+      <span class="ai-hero-tag">Arabic NLP</span>
+      <span class="ai-hero-tag">Computer Vision</span>
+    </div>
+    <div class="ai-hero-btns">
+      <a href="index.html#contact" class="bp">Book a Discovery Call →</a>
+      <a href="#solutions" class="bsb">See Our AI Catalog</a>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- WHY CUSTOM AI -->
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">Why Custom AI</span>
+    <h2 class="st">Generic AI Doesn't Know <em>Your Business</em></h2>
+    <p class="sd">Public LLMs are powerful, but they're trained on the open internet — not on your contracts, policies, customers, or workflows. The gap shows up the moment your team asks a real question.</p>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <span class="why-tag">Generic ChatGPT / Copilot</span>
+        <h3>Smart, but doesn't know <em style="color:var(--tx);font-style:normal;text-decoration:underline">you</em></h3>
+        <p>Trained on public data. Doesn't know your suppliers, project history, internal codes, or compliance requirements. Hallucinates with confidence.</p>
+        <ul>
+          <li>Generic answers — no business context</li>
+          <li>Your data sent to third parties</li>
+          <li>Cannot be deeply customized</li>
+          <li>Limited Arabic/RTL handling</li>
+          <li>Locked into vendor pricing</li>
+        </ul>
+      </div>
+      <div class="why-card highlight rv d1">
+        <span class="why-tag">Pro S; Custom AI</span>
+        <h3>Trained on <em style="color:#fff;text-decoration:underline">your</em> data, working for <em style="color:#fff;text-decoration:underline">your</em> team</h3>
+        <p>Built around your documents, processes, and history. Understands your terminology. Cites real internal sources. Stays inside your infrastructure.</p>
+        <ul>
+          <li>Grounded in your actual organizational knowledge</li>
+          <li>Data stays on your servers (on-premise option)</li>
+          <li>Tuned to your workflows and policies</li>
+          <li>Native Arabic + bilingual support</li>
+          <li>Open-source models — no vendor lock-in</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- SOLUTIONS CATALOG -->
+<section id="solutions">
+  <div class="ctn">
+    <span class="sl">Our AI Solutions</span>
+    <h2 class="st">Six Ways We Put AI to <em>Work for You</em></h2>
+    <p class="sd">Each solution is custom-built for your organization. We don't sell off-the-shelf AI — we engineer systems that fit your data, your workflows, and your security requirements.</p>
+    <div class="sol-grid">
+
+      <div class="sol-card rv">
+        <div class="sol-head">
+          <div class="sol-ico">🧠</div>
+          <h3>Custom AI on Your Data</h3>
+        </div>
+        <p>RAG (Retrieval-Augmented Generation) systems and fine-tuned models that ground every answer in your organization's actual knowledge — manuals, contracts, historical decisions, internal wikis.</p>
+        <ul class="sol-list">
+          <li>Document ingestion pipelines</li>
+          <li>Vector database (your servers)</li>
+          <li>Fine-tuned domain models</li>
+          <li>Source citation in every answer</li>
+          <li>Continuous knowledge updates</li>
+          <li>Permission-aware retrieval</li>
+        </ul>
+      </div>
+
+      <div class="sol-card rv d1">
+        <div class="sol-head">
+          <div class="sol-ico">💬</div>
+          <h3>Internal AI Assistants</h3>
+        </div>
+        <p>Private AI assistants for your teams — answering policy questions, summarizing meetings, drafting correspondence in your style, and surfacing institutional knowledge 24/7.</p>
+        <ul class="sol-list">
+          <li>Department-specific assistants</li>
+          <li>Voice + text interfaces</li>
+          <li>Slack / Teams / Web integration</li>
+          <li>Conversation memory & context</li>
+          <li>Role-based access control</li>
+          <li>Usage analytics & insights</li>
+        </ul>
+      </div>
+
+      <div class="sol-card rv">
+        <div class="sol-head">
+          <div class="sol-ico">📄</div>
+          <h3>Document Intelligence</h3>
+        </div>
+        <p>Turn unstructured documents — PDFs, scans, emails, contracts — into queryable structured data. Extract entities, dates, amounts, clauses, signatures, and route them automatically.</p>
+        <ul class="sol-list">
+          <li>OCR with Arabic + English support</li>
+          <li>Contract clause extraction</li>
+          <li>Invoice & receipt parsing</li>
+          <li>Form field recognition</li>
+          <li>Automatic categorization</li>
+          <li>Anomaly detection in documents</li>
+        </ul>
+      </div>
+
+      <div class="sol-card rv d1">
+        <div class="sol-head">
+          <div class="sol-ico">📈</div>
+          <h3>Predictive Analytics</h3>
+        </div>
+        <p>Forecasting and predictive models trained on your historical data — sales, demand, inventory, customer churn, employee attrition, project risks. See what's coming before it arrives.</p>
+        <ul class="sol-list">
+          <li>Time-series forecasting</li>
+          <li>Customer churn prediction</li>
+          <li>Demand & inventory planning</li>
+          <li>Risk & anomaly scoring</li>
+          <li>What-if scenario simulation</li>
+          <li>Live dashboards with predictions</li>
+        </ul>
+      </div>
+
+      <div class="sol-card rv">
+        <div class="sol-head">
+          <div class="sol-ico">⚙️</div>
+          <h3>AI-Powered Automation</h3>
+        </div>
+        <p>Intelligent workflows that don't just follow rules — they understand context, classify ambiguous cases, and decide. Replaces the "if-then" rules that always break on edge cases.</p>
+        <ul class="sol-list">
+          <li>Smart email triage & routing</li>
+          <li>Ticket classification & priority</li>
+          <li>Approval workflow assistance</li>
+          <li>Data validation & enrichment</li>
+          <li>Multi-step agent workflows</li>
+          <li>Human-in-the-loop checkpoints</li>
+        </ul>
+      </div>
+
+      <div class="sol-card rv d1">
+        <div class="sol-head">
+          <div class="sol-ico">👁️</div>
+          <h3>Computer Vision</h3>
+        </div>
+        <p>Visual AI tailored to your specific use case — quality inspection, security analytics, object detection, OCR. Pairs naturally with our Camera Planner platform for end-to-end deployments.</p>
+        <ul class="sol-list">
+          <li>Quality / defect detection</li>
+          <li>Person / vehicle / object tracking</li>
+          <li>Security event recognition</li>
+          <li>Plate & document OCR</li>
+          <li>Custom-trained classifiers</li>
+          <li>Real-time camera integration</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- INDUSTRIES -->
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">Industries We Serve</span>
+    <h2 class="st">AI for the <em>Sectors We Know</em></h2>
+    <p class="sd">We've built systems for these sectors and understand their data, regulations, and operational realities — so the AI we ship fits the work, not the demo.</p>
+    <div class="ind-grid">
+      <div class="ind rv">
+        <div class="ind-ico">🤝</div>
+        <h4>NGOs & Humanitarian</h4>
+        <p>Beneficiary records, donor reporting, multilingual document processing, and program analytics.</p>
+        <span class="ind-tag">Privacy-first</span>
+      </div>
+      <div class="ind rv d1">
+        <div class="ind-ico">🏛️</div>
+        <h4>Government</h4>
+        <p>Correspondence intelligence, citizen services, compliance automation, and on-premise deployments.</p>
+        <span class="ind-tag">On-premise</span>
+      </div>
+      <div class="ind rv d2">
+        <div class="ind-ico">🏢</div>
+        <h4>Commercial</h4>
+        <p>Sales forecasting, customer support automation, document processing, and operational dashboards.</p>
+        <span class="ind-tag">ROI-focused</span>
+      </div>
+      <div class="ind rv d3">
+        <div class="ind-ico">🏗️</div>
+        <h4>Engineering & Construction</h4>
+        <p>Project document mining, drawings analysis, RFI assistance, and predictive scheduling.</p>
+        <span class="ind-tag">Domain-tuned</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- PROCESS -->
+<section>
+  <div class="ctn">
+    <span class="sl">How We Build AI</span>
+    <h2 class="st">From Discovery to <em>Production in Weeks</em></h2>
+    <p class="sd">A pragmatic 5-stage process — heavy on understanding your problem first, light on bureaucracy. Most engagements deliver a working pilot in 8–12 weeks.</p>
+    <div class="proc">
+      <div class="proc-step rv">
+        <div class="proc-num">1</div>
+        <h4>Discover</h4>
+        <p>Understand the problem, the data, the users. Define success metrics.</p>
+        <div class="proc-time">1–2 weeks</div>
+      </div>
+      <div class="proc-step rv d1">
+        <div class="proc-num">2</div>
+        <h4>Design</h4>
+        <p>Choose architecture (RAG vs fine-tune), models, infrastructure. Data prep plan.</p>
+        <div class="proc-time">2–3 weeks</div>
+      </div>
+      <div class="proc-step rv d2">
+        <div class="proc-num">3</div>
+        <h4>Build & Train</h4>
+        <p>Engineer the pipelines, train models, set up evaluation harnesses.</p>
+        <div class="proc-time">4–8 weeks</div>
+      </div>
+      <div class="proc-step rv d3">
+        <div class="proc-num">4</div>
+        <h4>Pilot</h4>
+        <p>Deploy to a real team. Measure outcomes against baseline. Iterate fast.</p>
+        <div class="proc-time">2–4 weeks</div>
+      </div>
+      <div class="proc-step rv d4">
+        <div class="proc-num">5</div>
+        <h4>Scale</h4>
+        <p>Expand to more teams/use cases. Continuous learning + monitoring.</p>
+        <div class="proc-time">Ongoing</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- TECH STACK -->
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">Our AI Tech Stack</span>
+    <h2 class="st">Modern Open-Source <em>Foundations</em></h2>
+    <p class="sd">We favor open-source models and stacks so you own your AI — no vendor lock-in, no surprise pricing, full transparency over what's running on your data.</p>
+    <div class="stack">
+      <div class="stack-col rv">
+        <h4>🧠 Models</h4>
+        <div class="stack-pills">
+          <span class="stack-pill">Llama 3</span>
+          <span class="stack-pill">Mistral</span>
+          <span class="stack-pill">Qwen</span>
+          <span class="stack-pill">DeepSeek</span>
+          <span class="stack-pill">Claude API</span>
+          <span class="stack-pill">GPT-4</span>
+          <span class="stack-pill">Embedding models</span>
+          <span class="stack-pill">Whisper (STT)</span>
+          <span class="stack-pill">YOLO (vision)</span>
+        </div>
+      </div>
+      <div class="stack-col rv d1">
+        <h4>🛠️ AI Frameworks</h4>
+        <div class="stack-pills">
+          <span class="stack-pill">PyTorch</span>
+          <span class="stack-pill">Transformers</span>
+          <span class="stack-pill">LangChain</span>
+          <span class="stack-pill">LlamaIndex</span>
+          <span class="stack-pill">vLLM</span>
+          <span class="stack-pill">Ollama</span>
+          <span class="stack-pill">LoRA / QLoRA</span>
+          <span class="stack-pill">Unsloth</span>
+        </div>
+      </div>
+      <div class="stack-col rv d2">
+        <h4>💾 Infrastructure</h4>
+        <div class="stack-pills">
+          <span class="stack-pill">Qdrant</span>
+          <span class="stack-pill">Pinecone</span>
+          <span class="stack-pill">PostgreSQL + pgvector</span>
+          <span class="stack-pill">Docker</span>
+          <span class="stack-pill">Kubernetes</span>
+          <span class="stack-pill">FastAPI</span>
+          <span class="stack-pill">.NET Core</span>
+          <span class="stack-pill">Redis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- SECURITY & PRIVACY -->
+<section>
+  <div class="ctn">
+    <span class="sl">Security & Privacy</span>
+    <h2 class="st">Your Data <em>Stays Yours</em></h2>
+    <p class="sd">Enterprise AI demands enterprise security. Every Pro S; AI engagement starts with a privacy and deployment plan tailored to your compliance needs.</p>
+    <div class="sec-grid">
+      <div class="sec-card rv">
+        <div class="sec-ico">🏢</div>
+        <h4>On-Premise Deployment</h4>
+        <p>Run entirely inside your infrastructure using local open-source models. Your sensitive data never leaves your network.</p>
+      </div>
+      <div class="sec-card rv d1">
+        <div class="sec-ico">🔐</div>
+        <h4>Encryption End-to-End</h4>
+        <p>Data encrypted in transit (TLS) and at rest. Vector embeddings encrypted. Access controls auditable.</p>
+      </div>
+      <div class="sec-card rv d2">
+        <div class="sec-ico">👥</div>
+        <h4>Role-Based Access</h4>
+        <p>Permission-aware retrieval — the AI only surfaces information the asking user is allowed to see.</p>
+      </div>
+      <div class="sec-card rv">
+        <div class="sec-ico">📜</div>
+        <h4>Source Citations</h4>
+        <p>Every AI answer cites the source documents — no hallucinations passing as fact, full transparency for auditors.</p>
+      </div>
+      <div class="sec-card rv d1">
+        <div class="sec-ico">🔍</div>
+        <h4>Audit Logs</h4>
+        <p>Every prompt and response logged. Track usage patterns, detect misuse, prove compliance to regulators.</p>
+      </div>
+      <div class="sec-card rv d2">
+        <div class="sec-ico">🚫</div>
+        <h4>No Training on Your Data</h4>
+        <p>When using cloud APIs, we configure them to never train on your prompts. Your IP stays your IP.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- FAQ -->
+<section class="s-alt">
+  <div class="ctn">
+    <span class="sl">Common Questions</span>
+    <h2 class="st">Answers Before You <em>Even Ask</em></h2>
+    <div class="faq">
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How is custom AI different from just using ChatGPT?</div>
+        <div class="faq-a">Generic LLMs don't know your business. We train AI on your specific documents, processes, and history — so it understands your terminology, follows your policies, and produces outputs grounded in your actual data. Plus, your data stays under your control.</div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Does my data leave our infrastructure?</div>
+        <div class="faq-a">You choose. We support fully on-premise deployments using local open-source models (Llama, Mistral, Qwen) or hybrid setups where only non-sensitive operations use cloud APIs. For organizations with strict compliance requirements (government, finance, healthcare), we build entirely air-gapped systems.</div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does an AI engagement typically look like?</div>
+        <div class="faq-a">Discovery (1–2 weeks) → Design & data prep (2–3 weeks) → Build & train (4–8 weeks) → Pilot deployment (2–4 weeks) → Iterate & scale (ongoing). Most engagements deliver a working pilot in 8–12 weeks. We prefer iterative delivery over big-bang launches.</div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if our data is messy, incomplete, or in Arabic?</div>
+        <div class="faq-a">Both are common. We handle data cleaning and structuring as part of the engagement, and our systems support Arabic NLP, RTL documents, mixed Arabic/English content, and bilingual workflows natively. Data quality work is often where 50% of AI value comes from.</div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do you measure if AI is actually working?</div>
+        <div class="faq-a">We define success metrics in the discovery phase — accuracy targets, time saved per task, error reduction, user adoption rates. Every model we ship has an evaluation harness and dashboards so you see real impact, not vibes. If something doesn't move the metric, we change it.</div>
+      </div>
+      <div class="faq-item rv">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does it cost?</div>
+        <div class="faq-a">Engagements vary by scope — a focused internal assistant might be in the low five figures, while a full document intelligence platform with predictive analytics is more substantial. We offer fixed-price pilots so you can validate ROI before committing to a full build. Reach out for a tailored estimate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="dv"></div>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="ctn">
+    <div class="cta-final rv">
+      <h2>Let's Build AI That <em style="font-style:normal;text-decoration:underline">Actually Knows Your Business</em></h2>
+      <p>Tell us about your problem in a 30-minute discovery call. We'll come back with a concrete AI architecture, a phased plan, and a fixed-price pilot proposal — no marketing fluff.</p>
+      <div class="ai-hero-btns">
+        <a href="index.html#contact" class="bp">📅 Book a Discovery Call →</a>
+        <a href="mailto:info@pro-sss.com?subject=AI%20Solutions%20Inquiry" class="bsb">📧 Email Us Directly</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="ft" aria-label="Site footer"></footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
